@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skeez Sells</title>
+  <style>
+    :root {
+      --text-light: #fff;
+      --text-dark: #000;
+      --bg-dark: rgba(0, 0, 0, 0.7);
+      --button-bg: #fff;
+      --button-hover: #ddd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('FF2E5D29-59CB-4731-B7F6-B82379C4F787.PNG') no-repeat center center fixed;
+      background-size: cover;
+      background-color: #000;
+      color: var(--text-light);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bg-dark);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 700px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5em;
+      padding: 0 10px;
+    }
+
+    a.payment {
+      display: inline-block;
+      background-color: var(--button-bg);
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      margin-bottom: 2em;
+    }
+
+    a.payment:hover {
+      background-color: var(--button-hover);
+    }
+
+    .products {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .product {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      width: 100%;
+    }
+
+    .product h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    .product p {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .product h2 {
+        font-size: 1.2rem;
+      }
+
+      a.payment {
+        padding: 12px 25px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Skeez Sells</h1>
+    <span style="color: #ffeb3b; font-weight: bold;">*must include email in CashApp notes</span>
+    <p>Unlock exclusive web links for just $9.99/month.</p>
+    <a class="payment" href="https://cash.app/$gimme7dat" target="_blank">Pay $9.99 to $gimme7dat</a>
+
+    <div class="products">
+      <div class="product">
+        <h2>🔥 Top Resell Site #1</h2>
+        <p>Access exclusive electronics deals for flipping. Updated weekly.</p>
+      </div>
+      <div class="product">
+        <h2>💎 Secret Sneaker Plug</h2>
+        <p>Direct access to limited drops and insider sneaker groups.</p>
+      </div>
+      <div class="product">
+        <h2>📈 Viral Product Trends</h2>
+        <p>Get the latest trending products ready for resale. Delivered instantly.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
